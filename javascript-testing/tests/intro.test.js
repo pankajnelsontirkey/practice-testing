@@ -1,5 +1,6 @@
-import { describe, test, it, expect } from 'vitest';
-import { fizzBuzz, max } from '../src/intro';
+import { describe, expect, it } from 'vitest';
+
+import { calculateAverage, fizzBuzz, max } from '../src/intro';
 
 // test suite
 describe('max', () => {
@@ -43,5 +44,23 @@ describe('fizzBuzz', () => {
 
   it('should return the number if not divisible', () => {
     expect(fizzBuzz(4)).toBe('4');
+  });
+});
+
+describe('calculate average of array', () => {
+  it('should return NaN if array is empty', () => {
+    expect(calculateAverage([])).toBeNaN();
+  });
+
+  it('should return the first element of array with a single element', () => {
+    expect(calculateAverage([3])).toBe(3);
+  });
+
+  it('should return average of elements for array with two elements ', () => {
+    expect(calculateAverage([1, 2])).toBe(1.5);
+  });
+
+  it('should return average of elements for array with three elements ', () => {
+    expect(calculateAverage([1, 2, 3])).toBe(2);
   });
 });

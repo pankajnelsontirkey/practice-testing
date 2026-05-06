@@ -14,3 +14,11 @@ export function fizzBuzz(n) {
   if (n % 5 === 0) return 'Buzz';
   return n.toString();
 }
+
+export function calculateAverage(numbers) {
+  if (!numbers.length) {
+    return NaN;
+  }
+
+  return numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+}
