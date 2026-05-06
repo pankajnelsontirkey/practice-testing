@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { calculateAverage, fizzBuzz, max } from '../src/intro';
+import { calculateAverage, factorial, fizzBuzz, max } from '../src/intro';
 
 // test suite
 describe('max', () => {
@@ -62,5 +62,31 @@ describe('calculate average of array', () => {
 
   it('should return average of elements for array with three elements ', () => {
     expect(calculateAverage([1, 2, 3])).toBe(2);
+  });
+});
+
+describe('factorial', () => {
+  it('should return 0 for input argument is 0', () => {
+    expect(factorial(0)).toBe(1);
+  });
+
+  it('should return 1 for input argument is 1', () => {
+    expect(factorial(1)).toBe(1);
+  });
+
+  it('should return 2 for input argument is 2', () => {
+    expect(factorial(2)).toBe(2);
+  });
+
+  it('should return 6 for input argument is 3', () => {
+    expect(factorial(3)).toBe(6);
+  });
+
+  it('should return 24 of input argument 4', () => {
+    expect(factorial(4)).toBe(24);
+  });
+
+  it('should return undefined for input argument a negative number ', () => {
+    expect(factorial(-1)).toBeUndefined();
   });
 });
