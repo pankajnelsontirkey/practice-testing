@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 const app: Express = express();
 
 app.use(urlencoded({ extended: false }));
-app.use(morgan('dev'));
+app.use(morgan('combined'));
 
 app.use(
   (error: CustomError, req: Request, res: Response, next: NextFunction) => {
