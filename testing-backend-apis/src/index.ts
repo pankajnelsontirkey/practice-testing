@@ -8,12 +8,7 @@ import express, {
 import morgan from 'morgan';
 
 import router from './routes/index.js';
-
-export interface CustomError extends Error {
-  message: string;
-  statusCode?: number;
-  data?: any;
-}
+import type { CustomError } from './types.js';
 
 const PORT = process.env.PORT || 5000;
 const app: Express = express();
