@@ -9,16 +9,19 @@
     "start": "node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "nanoid": "^5.1.11",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
     "tsx": "^4.21.0"
   }
 }
