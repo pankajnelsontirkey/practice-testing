@@ -1,0 +1,15 @@
+{
+  "name": "testing-101_ztm",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "pankajnelsontirkey",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch *.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.3.0"
+  }
+}
