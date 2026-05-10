@@ -1,8 +1,7 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { nanoid } from 'nanoid';
+import { describe, expect, it, vi } from 'vitest';
 
+import { longUrlMap, shortUrlMap } from '../db/db.js';
 import { createShortUrl } from './urls.js';
-import { longUrlMap, shortUrlMap, visitCount } from '../db/db.js';
 
 vi.mock('nanoid', () => ({ nanoid: () => 'abcd1234' }));
 
